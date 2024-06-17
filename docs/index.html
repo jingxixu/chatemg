@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="ChatEMG: Synthetic Data Generation to Control a Robotic Hand Orthosis for Stroke" />
+    <meta name="keywords" content="Generative AI, Wearable Robotics, Exoskeleton, Hand Orthosis, Intent Inferral, Rehabilitation, Synthetic Data, ChatGPT, Transformers, Machine Learning, Robotics" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ChatEMG</title>
+
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-10ELQQZTYE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-10ELQQZTYE");
+    </script> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <!-- <link rel="icon" href="./static/images/favicon.svg" /> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body title-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">ChatEMG: Synthetic Data Generation to Control a Robotic Hand Orthosis for Stroke</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"> <a href="https://jxu.ai">Jingxi Xu</a><sup>*, 1</sup>,</span>
+                <span class="author-block"> <a href="#">Runsheng Wang</a><sup>*, 1</sup>,</span>
+                <span class="author-block"> <a href="#">Siqi Shang</a><sup>*, 1</sup>, </span>
+                <span class="author-block"> <a href="https://avachen.net/">Ava Chen</a><sup>1</sup>, </span>
+                <span class="author-block"> <a href="#">Lauren Winterbottom</a><sup>2</sup>, </span>
+                <span class="author-block"> <a href="#">To-Liang Hsu</a><sup>1</sup>, </span>
+                <span class="author-block"> <a href="#">Wenxi Chen</a><sup>1</sup>, </span>
+                <span class="author-block"> <a href="#">Khondoker Ahmed</a><sup>1</sup>, </span>
+                <span class="author-block"> <a href="#">Pedro Leandro La Rotta</a><sup>1</sup>, </span>
+                <span class="author-block"> <a href="#">Xinyue Zhu</a><sup>1</sup>, </span>
+                <span class="author-block"> <a href="#">Dawn M. Nilsen</a><sup>2</sup>, </span>
+                <span class="author-block"> <a href="#">Joel Stein</a><sup>2</sup>, </span>
+                <span class="author-block"> <a href="https://roam.me.columbia.edu/people/matei-ciocarlie">Matei Ciocarlie</a><sup>1</sup> </span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>*</sup>Equal contribution,</span>
+                <span class="author-block"><sup>1</sup>Columbia University,</span>
+                <span class="author-block"><sup>2</sup>Columbia University Irving Medical Center</span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- PDF Link. -->
+                  <span class="link-block">
+                    <a href="#" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <img src="./static/images/pdf.svg" alt="PDF" />
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+                  <!-- arXiv Link. -->
+                  <span class="link-block">
+                    <a href="#" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <img src="./static/images/arxiv.svg" alt="ArXiv" />
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                  <!-- Video Link. -->
+                  <span class="link-block">
+                    <a href="#" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <img src="./static/images/youtube.svg" alt="Youtube" />
+                      </span>
+                      <span>Video</span>
+                    </a>
+                  </span>
+                  <!-- Code Link. -->
+                  <span class="link-block">
+                    <a href="#" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+                  <!-- Dataset Link. -->
+                  <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <video id="teaser" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/teaser.mp4" type="video/mp4" />
+          </video>
+          <h2 class="subtitle has-text-centered">Stroke patient performs functional pick-and-place tasks.</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+   PROGRESSIVELY ENHANCED
+   If a user has `prefers-reduced-motion: reduced`, there will be no animation
+   and the items will wrap, instead of being hidden.
+   If they have not opted for reduced motion, the items will be duplicated with JS
+   and the duplicated content will have `aria-hidden="true"` to prevent duplicate content
+   for screen readers.
+   If a user has JS disabled or it fails for whatever reason, they will get the same 
+   experience as a user with `prefers-reduced-motion: reduced`, so no content is hidden,
+   and there is no animation.
+   
+   === OPTIONS ===
+   CONTROL SPEED 
+   If you don't assign anything, it will use a default speed.
+   To change the speed, on the `.scroller`
+   you can use `data-speed="fast"` or `data-speed="slow"
+
+   CONTROL DIRECTION 
+   By default, it will scroll from right to left.
+   To change the direction, on the `.scroller`
+   you can use `data-direction="right"` (`data-direction="left" also works, but it is the default) 
+-->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-2">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Intent inferral on a hand orthosis for stroke patients is challenging due to the difficulty of data collection from impaired subjects. Additionally, EMG signals exhibit significant
+                variations across different conditions, sessions, and subjects, making it hard for classifiers to generalize. Traditional approaches require a large labeled dataset from the new
+                condition, session, or subject to train intent classifiers; however, this data collection process is burdensome and time-consuming. In this paper, we propose ChatEMG, an autoregressive
+                generative model that can generate synthetic EMG signals conditioned on prompts (i.e., a given sequence of EMG signals). ChatEMG enables us to collect only a small dataset from the new
+                condition, session, or subject and expand it with synthetic samples conditioned on prompts from this new context. ChatEMG leverages a vast repository of previous data via generative
+                training while still remaining context-specific via prompting. Our experiments show that these synthetic samples are classifier-agnostic and can improve intent inferral accuracy for
+                different types of classifiers. We demonstrate that our complete approach can be integrated into a single patient session, including the use of the classifier for functional
+                orthosis-assisted tasks. To the best of our knowledge, this is the first time an intent classifier trained partially on synthetic data has been deployed for functional control of an
+                orthosis by a stroke survivor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--/ Abstract. -->
+
+        <!-- Paper video. -->
+        <!-- <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-2">Video</h2>
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/MkaITIAZQEk?si=Cz8SneSDJ9oBV-ZW" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div> -->
+        <!--/ Paper video. -->
+      </div>
+    </section>
+
+    <!-- <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{xu2024geotact,
+      title={Tactile-based Object Retrieval from Granular Media},
+      author={Xu, Jingxi and Jia, Yinsen and Yang, Dongxiao and Meng, Patrick and Zhu, Xinyue and Guo, Zihan and Song, Shuran and Ciocarlie, Matei},
+      journal={arXiv preprint arXiv:2402.04536},
+      year={2023}
+    }</code></pre>
+      </div>
+    </section> -->
+
+    <!-- <section class="section is-small">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-4 has-text-centered">Questions & Answers</h2>
+
+            <div id="visualization-qa" class="block">
+              <h3 class="title is-6">What is your tactile sensor?</h3>
+              <div class="columns">
+                <div class="column is-three-fifths">
+                  <p>
+                    We use the DISCO tactile finger (<a href="https://arxiv.org/abs/2004.00685">arXiv</a>, <a href="">video</a>,
+                    <a href="https://www.engineering.columbia.edu/news/ciocarlie-tactile-robot-finger">blog post</a>), a multi-curved optics-based tactile finger with all-around sensing coverage. It
+                    uses overlapping signals from light emitters and receivers embedded in a transparent waveguide layer. Its streamlined shapes allow smooth movement and its large sensing coverage is
+                    critical for manipulation inside granular media because contacts come from every angle.
+                  </p>
+                </div>
+                <div class="column is-two-fifths">
+                  <img src="./static/images/disco_full_compressed.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="block">
+              <h3 class="title is-6">What is the tactile observation into your policy?</h3>
+              <p>The tactile observation is a a sequence of contact locations and net forces from the last ten steps.</p>
+            </div>
+
+            <div class="block">
+              <h3 class="title is-6">When does your policy fail?</h3>
+              <p>
+                Our policy often fails on rounded shapes (e.g., ball, tomato soup can) when deployed on the real robot. A successful grasp of these two objects is extremely sensitive to sensor error,
+                due to their rounded shape. Our policy locates both objects well, but the gripper simply often squeezes them out during closing.
+              </p>
+              <br />
+              <p>
+                Another common failure case of our policy on the real robot is due to a thin layer of granules stuck between the target object and the finger. When this happens, due to the low
+                friction coefficient with the granules, the object will slip out of the formed grasp.
+              </p>
+              <br />
+              <p>See <a href="https://youtu.be/MkaITIAZQEk?si=Sw0PbQjodhQL7wzv&t=178">here</a> for video demonstrations of the two failure cases above.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">Acknowledgement</h2>
+        <p>This work was supported in part by the National Institutes of Health (R01NS115652, F31HD111301) and the CU Data Science Institute.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <!-- <div class="content has-text-centered">
+          <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+          <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+            <i class="fab fa-github"></i>
+          </a>
+        </div> -->
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>If you have any questions, please contact <a href="https://jxu.ai">Jingxi Xu</a>.</p>
+              <p>Website template modified from <a href="https://nerfies.github.io/">NeRFies</a>.</p>
+              <p>This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+              <p>
+                This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website, we just ask that you link back to this page in the footer.
+                Please remember to remove the analytics code included in the header of the website which you do not want on your website.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
