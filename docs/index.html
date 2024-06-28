@@ -200,84 +200,85 @@
       </div>
     </section>
 
-    <!-- <section class="section is-small">
+    <section class="section is-small">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column is-four-fifths">
             <h2 class="title is-4 has-text-centered">Questions & Answers</h2>
 
             <div id="visualization-qa" class="block">
-              <h3 class="title is-6">What is your tactile sensor?</h3>
+              <h3 class="title is-6">What is your hand orthosis?</h3>
               <div class="columns">
-                <div class="column is-three-fifths">
+                <div class="column is-four-fifths">
                   <p>
-                    We use the DISCO tactile finger (<a href="https://arxiv.org/abs/2004.00685">arXiv</a>, <a href="">video</a>,
-                    <a href="https://www.engineering.columbia.edu/news/ciocarlie-tactile-robot-finger">blog post</a>), a multi-curved optics-based tactile finger with all-around sensing coverage. It
-                    uses overlapping signals from light emitters and receivers embedded in a transparent waveguide layer. Its streamlined shapes allow smooth movement and its large sensing coverage is
-                    critical for manipulation inside granular media because contacts come from every angle.
+                    Our orthosis is an exotendon device consisting of a forearm splint and fingertip components. These two parts are connected through an exotendon network. The device is
+                    underactuated, moving all of the fingers at once. When the motor retracts the tendons, the subject’s fingers extend. When the motor releases the tendons, the subject uses their own
+                    grip strength to close their hand. Additional details can be found <a href="https://arxiv.org/abs/1808.00092">here</a>.
                   </p>
                 </div>
-                <div class="column is-two-fifths">
-                  <img src="./static/images/disco_full_compressed.jpg" alt="" />
+                <div class="column is-one-fifth">
+                  <img src="./static/images/web_orthosis.jpeg" alt="" />
                 </div>
               </div>
             </div>
 
             <div class="block">
-              <h3 class="title is-6">What is the tactile observation into your policy?</h3>
-              <p>The tactile observation is a a sequence of contact locations and net forces from the last ten steps.</p>
+              <h3 class="title is-6">Why is your approach called ChatEMG?</h3>
+              <p>
+                ChatEMG operates on the “language” of EMG data, and it generates synthetic EMG signals in response to EMG prompts. This approach is similar in concept to language models such as
+                <a href="https://chatgpt.com">ChatGPT</a>, which is capable of generating text in response to a text prompt, hence its chosen moniker.
+              </p>
             </div>
 
             <div class="block">
-              <h3 class="title is-6">When does your policy fail?</h3>
+              <h3 class="title is-6">What are the Fugl-Meyer scores for upper extremity (FM-UE)?</h3>
               <p>
-                Our policy often fails on rounded shapes (e.g., ball, tomato soup can) when deployed on the real robot. A successful grasp of these two objects is extremely sensitive to sensor error,
-                due to their rounded shape. Our policy locates both objects well, but the gripper simply often squeezes them out during closing.
+                The Fugl-Meyer assessment is a stroke-specific, clinically validated, performance-based index for motor impairment. It is split into upper and lower extremity components, and we use
+                the upper extremity subscale FM-UE.
               </p>
-              <br />
+            </div>
+
+            <div class="block">
+              <h3 class="title is-6">What tyoe of impairment does the stroke subjetcs in your work have?</h3>
               <p>
-                Another common failure case of our policy on the real robot is due to a thin layer of granules stuck between the target object and the finger. When this happens, due to the low
-                friction coefficient with the granules, the object will slip out of the formed grasp.
+                The stroke participants in our study can fully close their hands but are unable to completely extend their fingers without assistance. The passive range of motion in the fingers is
+                within functional limits.
               </p>
-              <br />
-              <p>See <a href="https://youtu.be/MkaITIAZQEk?si=Sw0PbQjodhQL7wzv&t=178">here</a> for video demonstrations of the two failure cases above.</p>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
-
-
-
-
-
+    </section>
 
     <!-- Individual Patient Images -->
     <section class="section">
       <div class="container is-max-desktop">
-        <h2 class="title is-2 has-text-centered">
-          Real vs. Synthetic <br />
-        </h2>
+        <h2 class="title is-2 has-text-centered">Synthetic Sample Visualization <br /></h2>
+        <p>
+          We visualize synthetic samples for all five stroke patients across three intents. We also present their gender, age, and Fugl-Meyer scores for the upper extremity (FM-UE) in parentheses. The
+          first plot shows the 150-step (1.5s) prompts provided to ChatEMG. The second and third plots show the real and synthetic data, respectively. The vertical dashed line indicates when the
+          prompt ends. In the synthetic plot, the model generates the synthetic data after the vertical line. In the real plot, the entire data (both before and after the vertical line) is real.
+        </p>
         <br />
 
-        <h3 class="title is-4">Subject 1</h3>
+        <h3 class="title is-4">Subject S1 (Male, 46, FM-UE: 27)</h3>
         <h4 class="title is-6">Open</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p1_open/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p1_open/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p1_open/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p1_open/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p1_open/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p1_open/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
@@ -287,19 +288,19 @@
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p1_close/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p1_close/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p1_close/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p1_close/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p1_close/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p1_close/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
@@ -309,43 +310,42 @@
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p1_relax/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p1_relax/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p1_relax/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p1_relax/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p1_relax/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p1_relax/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
         </div>
 
-
-        <h3 class="title is-4">Subject 2</h3>
+        <h3 class="title is-4">Subject S2 (Male, 48, FM-UE: 26)</h3>
         <h4 class="title is-6">Open</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p3_open/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p3_open/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p3_open/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p3_open/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p3_open/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p3_open/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
@@ -355,19 +355,19 @@
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p3_close/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p3_close/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p3_close/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p3_close/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p3_close/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p3_close/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
@@ -377,43 +377,42 @@
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p3_relax/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p3_relax/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p3_relax/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p3_relax/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p3_relax/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p3_relax/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
         </div>
 
-
-        <h3 class="title is-4">Subject 3</h3>
+        <h3 class="title is-4">Subject S3 (Female, 53, FM-UE: 26)</h3>
         <h4 class="title is-6">Open</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p4_open/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p4_open/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p4_open/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p4_open/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p4_open/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p4_open/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
@@ -423,19 +422,19 @@
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p4_close/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p4_close/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p4_close/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p4_close/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p4_close/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p4_close/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
@@ -445,43 +444,42 @@
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p4_relax/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p4_relax/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p4_relax/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p4_relax/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p4_relax/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p4_relax/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
         </div>
 
-
-        <h3 class="title is-4">Subject 4</h3>
+        <h3 class="title is-4">Subject S4 (Male, 31, FM-UE: 50)</h3>
         <h4 class="title is-6">Open</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p7_open/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p7_open/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p7_open/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p7_open/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p7_open/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p7_open/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
@@ -491,19 +489,19 @@
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p7_close/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p7_close/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p7_close/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p7_close/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p7_close/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p7_close/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
@@ -513,43 +511,42 @@
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p7_relax/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p7_relax/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p7_relax/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p7_relax/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p7_relax/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p7_relax/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
         </div>
 
-
-        <h3 class="title is-4">Subject 5</h3>
+        <h3 class="title is-4">Subject S5 (Male, 53, FM-UE: 47)</h3>
         <h4 class="title is-6">Open</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p8_open/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p8_open/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p8_open/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p8_open/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p8_open/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p8_open/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
@@ -559,19 +556,19 @@
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p8_close/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p8_close/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p8_close/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p8_close/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p8_close/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p8_close/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
@@ -581,36 +578,25 @@
         <div class="columns is-centered">
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p8_relax/before.png" alt="Before Image">
+              <img src="./static/images/data_gen/p8_relax/before.png" alt="Before Image" />
               <figcaption>Prompt</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p8_relax/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <img src="./static/images/data_gen/p8_relax/ca_groundtruth.png" alt="CA Groundtruth Image" />
               <figcaption>Real</figcaption>
             </figure>
           </div>
           <div class="column is-one-third">
             <figure class="image-container">
-              <img src="./static/images/data_gen/p8_relax/after.png" alt="After Image">
+              <img src="./static/images/data_gen/p8_relax/after.png" alt="After Image" />
               <figcaption>Synthetic</figcaption>
             </figure>
           </div>
         </div>
-
-
-
       </div>
     </section>
-
-
-
-
-
-
-
-
 
     <section class="section" id="BibTeX">
       <div class="container is-max-desktop content">
