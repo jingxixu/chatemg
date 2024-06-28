@@ -247,454 +247,370 @@
       </div>
     </section> -->
 
-    <!-- Individual object videos -->
-    <!-- <section class="section">
+
+
+
+
+
+    <!-- Individual Patient Images -->
+    <section class="section">
       <div class="container is-max-desktop">
         <h2 class="title is-2 has-text-centered">
-          Individual Object Demonstrations <br />
-          <span class="title is-4">All videos are <span style="color: red">1X</span> speed.</span>
+          Real vs. Synthetic <br />
         </h2>
-        <p>
-          Our method is trained on a set of seven objects. It is then evaluated quantitatively (ten attempts on each object) on both the set of seven training objects and a set of six previously
-          unseen objects. In additional testing, we also show that our method can work on an extended set of 22 unseen objects with at most three attempts per object.
-        </p>
         <br />
 
-        <h2 class="title is-3 has-text-centered">7 Training Objects</h2>
-
-        <h3 class="title is-4">Cube (52.4g)</h3>
+        <h3 class="title is-4">Subject 1</h3>
+        <h4 class="title is-6">Open</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/cube_1-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p1_open/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/cube_2-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p1_open/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/cube_3-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p1_open/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
           </div>
         </div>
 
-        <h3 class="title is-4">Long Cuboid (75.2g)</h3>
+        <h4 class="title is-6">Close</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/cuboid_1-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p1_close/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/cuboid_2-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p1_close/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/cuboid_3-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p1_close/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
           </div>
         </div>
 
-        <h3 class="title is-4">Ball (36.6g)</h3>
+        <h4 class="title is-6">Relax</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/ball_1-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p1_relax/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/ball_2-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p1_relax/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/ball_3-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p1_relax/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
           </div>
         </div>
 
-        <h3 class="title is-4">Pentagram (16.6g)</h3>
+
+        <h3 class="title is-4">Subject 2</h3>
+        <h4 class="title is-6">Open</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/pentagram_1-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p3_open/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/pentagram_2-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p3_open/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/pentagram_3-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p3_open/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
           </div>
         </div>
 
-        <h3 class="title is-4">L-shape (98.2g)</h3>
+        <h4 class="title is-6">Close</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/Lshape_1-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p3_close/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/Lshape_2-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p3_close/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/Lshape_3-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p3_close/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
           </div>
         </div>
 
-        <h3 class="title is-4">Tomato Soup Can (335g)</h3>
+        <h4 class="title is-6">Relax</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/soupcan_1-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p3_relax/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/soupcan_2-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p3_relax/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/soupcan_3-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p3_relax/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
           </div>
         </div>
 
-        <h3 class="title is-4">Potted Meat Can (365g)</h3>
+
+        <h3 class="title is-4">Subject 3</h3>
+        <h4 class="title is-6">Open</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/meatcan_1-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p4_open/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/meatcan_2-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p4_open/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/training_trimmed_low_res/meatcan_3-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p4_open/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
           </div>
         </div>
 
-        <h2 class="title is-3 has-text-centered">6 Unseen Objects</h2>
-
-        <h3 class="title is-4">Clamp (35.7g)</h3>
+        <h4 class="title is-6">Close</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/clamp_1-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p4_close/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/clamp_2-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p4_close/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/clamp_3-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p4_close/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
           </div>
         </div>
 
-        <h3 class="title is-4">Toy Banana (15.0g)</h3>
+        <h4 class="title is-6">Relax</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/banana_1-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p4_relax/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/banana_2-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p4_relax/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/banana_3-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p4_relax/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
           </div>
         </div>
 
-        <h3 class="title is-4">Utility Knife (217.4g)</h3>
+
+        <h3 class="title is-4">Subject 4</h3>
+        <h4 class="title is-6">Open</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/utility_knife_1-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p7_open/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/utility_knife_2-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p7_open/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/utility_knife_3-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p7_open/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
           </div>
         </div>
 
-        <h3 class="title is-4">Screw Driver (94.6g)</h3>
+        <h4 class="title is-6">Close</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/screw_driver_1-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p7_close/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/screw_driver-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p7_close/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/screw_driver_3-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p7_close/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
           </div>
         </div>
 
-        <h3 class="title is-4">Chocolate Box (19.9g)</h3>
+        <h4 class="title is-6">Relax</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/chocolate_box_2-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p7_relax/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/chocolate_box_3-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p7_relax/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/chocolate_box_4-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p7_relax/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
           </div>
         </div>
 
-        <h3 class="title is-4">Coconut Water Can (67.3g)</h3>
+
+        <h3 class="title is-4">Subject 5</h3>
+        <h4 class="title is-6">Open</h4>
         <div class="columns is-centered">
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/coconut_water_1-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p8_open/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/coconut_water_2-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p8_open/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
           </div>
-
           <div class="column is-one-third">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video controls playsinline height="100%" preload="metadata">
-                  <source src="./static/videos/web_export/unseen_trimmed_low_res/coconut_water_3-compress_mp4_1k_kpbs.mp4#t=0.01" type="video/mp4" />
-                </video>
-              </div>
-            </div>
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p8_open/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
           </div>
         </div>
+
+        <h4 class="title is-6">Close</h4>
+        <div class="columns is-centered">
+          <div class="column is-one-third">
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p8_close/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-third">
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p8_close/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-third">
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p8_close/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <h4 class="title is-6">Relax</h4>
+        <div class="columns is-centered">
+          <div class="column is-one-third">
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p8_relax/before.png" alt="Before Image">
+              <figcaption>Prompt</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-third">
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p8_relax/ca_groundtruth.png" alt="CA Groundtruth Image">
+              <figcaption>Real</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-third">
+            <figure class="image-container">
+              <img src="./static/images/data_gen/p8_relax/after.png" alt="After Image">
+              <figcaption>Synthetic</figcaption>
+            </figure>
+          </div>
+        </div>
+
+
 
       </div>
-    </section> -->
+    </section>
+
+
+
+
+
+
+
+
 
     <section class="section" id="BibTeX">
       <div class="container is-max-desktop content">
