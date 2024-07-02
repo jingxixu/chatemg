@@ -20,7 +20,7 @@ body {
 
 .teaser .hero-body {
   padding-top: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 0;
 }
 
 .teaser {
@@ -235,4 +235,22 @@ body {
   to {
     transform: translate(calc(-50% - 0.5rem));
   }
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 12 / 4;
+}
+
+.image-container figcaption {
+  text-align: center;
+  margin-top: 8px; /* Adjust as necessary */
+  font-size: 1rem; /* Adjust as necessary */
 }
