@@ -30,7 +30,7 @@ The training process typically takes around 24 minutes on one GeForce RTX 4090 G
 The ChatEMG model should overfit to the given data file with the provided configuration. The training loss should be under
 0.001 and the validation loss should be around 0.003 for the last few checkpoints.
 
-All the model checkpoints during the training process will take around 10GB of disk space.
+All the model checkpoints (257.6MB each) during the training process will take around 7.5GB of disk space.
 
 ## Evaluation
 

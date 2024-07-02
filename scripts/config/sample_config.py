@@ -1,6 +1,6 @@
 exp_name = "sample_train"
 filter_class = 0  # [relax, open, close]
-eval_interval = 2500  # keep frequent because we'll overfit
+eval_interval = 1000  # checkpoint interval, how often the checkpoint is saved
 eval_iters = 200
 log_interval = 10  # don't print too often
 
